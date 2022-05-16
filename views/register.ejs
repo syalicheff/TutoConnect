@@ -1,8 +1,8 @@
 <h1>Inscription</h1>
 <form action="/register" method="POST">
   <div>
-    <label for="name">Nom</label>
-    <input type="text" id="name" name="name" required>
+    <label for="name">Pseudo</label>
+    <input type="text" id="username" name="username" required>
   </div>
   <div>
     <label for="email">Email</label>
@@ -12,6 +12,33 @@
     <label for="password">Mot de Passe</label>
     <input type="password" id="password" name="password" required>
   </div>
+  <fieldset>
+    <legend>Choisir les roles associés à l'utilisateur:</legend>
+    <div>
+      <input type="checkbox" id="admin" name="roles"value="admin">
+      <label for="admin">Admin</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Magasin" name="roles" value="magasin">
+      <label for="admin">Magasin</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Vente" name="roles"value="vente">
+      <label for="admin">Vente</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Support" name="roles"value="support">
+      <label for="admin">Support</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Facturation" name="roles"value="facturation">
+      <label for="admin">Facturation</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Compta" name="roles" value="compta">
+      <label for="admin">Comptabilité</label>
+    </div>
+</fieldset>
   <button type="submit">Inscription</button>
 </form>
 <a href="/login">Login</a>
